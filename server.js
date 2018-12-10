@@ -26,8 +26,12 @@ app.use('/', router);
 
 
 // ensure web server is starting with dynamic port 
-app.set("port", process.env.PORT || 8080);
- 
-    app.listen(app.get("port"), function () {
-        console.log(" App Listening on port " + app.get("port"));
+
+
+    app.listen(PORT, function() {
+      console.log(
+        "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
+        PORT,
+        PORT
+      );
     });
