@@ -2,7 +2,6 @@
 // Node Dependencies
 var express = require('express');
 var bodyParser = require('body-parser');
-var methodOverride = require('method-override');
 
 // Open Server
 var PORT = process.env.PORT || 8080;
@@ -26,7 +25,6 @@ app.use('/', router);
 
 
 // ensure web server is starting with dynamic port 
-
 
     app.listen(PORT, function() {
       console.log(
